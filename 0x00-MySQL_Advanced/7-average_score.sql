@@ -1,7 +1,7 @@
 -- A stored procedure ComputeAverageScoreForUser that
 -- computes and stores the average score for a student.
 DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
-[?12;2$yDELIMITER $$
+DELIMITER $$
 CREATE PROCEDURE ComputeAverageScoreForUser (user_id INT)
 BEGIN
     DECLARE total_score INT DEFAULT 0;
